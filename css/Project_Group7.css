@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+/* CSS Document */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	For some Androids -webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+*:active,
+*:focus,
+*::before:active,
+*::before:focus,
+*::after:active,
+*::after:focus {
+	outline: none;
+}
+
+input[type="range"] {
+	/* Specific width is required for Firefox. */
+
+	-webkit-appearance: none;
+	width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"]::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+body {
+	background: #00ffcc;
+}
+
+.keyboard {
+	width: 90vw;
+	padding-bottom: 48.5vw;
+	/* 35 */
+	margin: 0px auto;
+	background: #5f5f5f;
+	position: relative;
+	box-shadow: 5px 5px 0px #2f2f2f;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.keyboard.hidden {
+	opacity: 0;
+	padding-bottom: 0vw;
+}
+
+.keyboard>.top {
+	position: absolute;
+	height: 18vw;
+	top: 0;
+	width: 100%;
+	left: 0;
+	border-bottom: 2px solid #00ffcc;
+}
+
+.keyboard>.top .display {
+	height: 15vw;
+	width: 30%;
+	background: black;
+	position: absolute;
+	left: 35%;
+	top: 2vw;
+}
+
+.keyboard>.top .display canvas {
+	height: 100%;
+	width: 100%;
+}
+
+.keyboard>.top .type {
+	width: 15vw;
+	left: 10%;
+	top: 1.5vw;
+	position: absolute;
+	background: #4f4f4f;
+	padding: 1vw;
+	padding-left: 3vw;
+}
+
+/* shape of sound */
+.keyboard>.top .type .indv-type {
+	font-size: 2.5vw;
+	line-height: 4.33vw;
+}
+
+.keyboard>.top .type .indv-type:hover {
+	cursor: pointer;
+}
+
+.keyboard>.top .type .selector {
+	height: 1vw;
+	width: 1vw;
+	background: #00ffcc;
+	position: absolute;
+	left: 1vw;
+	top: 0;
+	transform: 0.5s ease;
+}
+
+.keyboard>.top .type .selector.top {
+	-webkit-transform: translateY(2.67vw);
+	-ms-transform: translateY(2.67vw);
+	transform: translateY(2.67vw);
+}
+
+.keyboard>.top .type .selector.middle {
+	-webkit-transform: translateY(7vw);
+	-ms-transform: translateY(7vw);
+	transform: translateY(7vw);
+}
+
+.keyboard>.top .type .selector.bottom {
+	-webkit-transform: translateY(11.33vw);
+	-ms-transform: translateY(11.33vw);
+	transform: translateY(11.33vw);
+}
+
+.keyboard>.top .name {
+	margin-top: 0.3vw;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-size: 1.5vw;
+	font-style: italic;
+	font-weight: 700;
+	color: #00ffcc;
+	text-shadow: -1px -1px #667043;
+	font-family: 'STLiti';
+}
+
+.keyboard>.top .volabel {
+	position: absolute;
+	top: 3vw;
+	left: 65vw;
+	width: 18vw;
+	height: 4vw;
+	font-size: 1.5vw;
+	color: #00ffcc;
+	text-align: right;
+	font-weight: 700;
+	font-family: 'Microsoft YaHei';
+}
+
+.keyboard>.top .volume {
+	position: absolute;
+	top: 6vw;
+	right: 7vw;
+	width: 15vw;
+	height: 2.5vw;
+	background: #4f4f4f;
+}
+
+.keyboard>.top .volume input[type="range"] {
+	width: 90%;
+	background: #2f2f2f;
+	position: absolute;
+	/* margin-top: -1vw; */
+
+	top: 0.85vw;
+	left: 5%;
+}
+
+.keyboard>.top .volume input[type="range"]::-webkit-slider-thumb {
+	background: #00ffcc;
+	height: 1vw;
+	width: 1vw;
+	cursor: pointer;
+}
+
+/* some buttons of Axel */
+.keyboard>.top .containers {
+	position: absolute;
+	top: 9vw;
+	right: 1.5vw;
+	width: 28vw;
+	height: 8.5vw;
+	background-color: lightgrey;
+	border: 2px solid grey;
+}
+
+.box {
+	height: 17vh;
+	width: 22vw;
+	display: table;
+}
+
+.buttons {
+	height: 5vh;
+	width: 5vw;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+
+/* some buttons of Axel */
+
+.keyboard .bottom {
+	position: absolute;
+	height: 30.5vw;
+	width: 100%;
+	bottom: 0;
+	background: #4f4f4f;
+}
+
+.keyboard .keys {
+	width: 80%;
+	height: 30vw;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	z-index: 0;
+}
+
+.keyboard .keys .key {
+	display: inline-block;
+	width: 14.2%;
+	/* 14.2857143 */
+	height: 100%;
+	text-align: center;
+	line-height: 1250%;
+	background: white;
+	border-right: 2px solid #5f5f5f;
+	border-bottom: 2px solid #5f5f5f;
+	font-size: 4vw;
+	z-index: 1;
+}
+
+.keyboard .keys .key:hover {
+	cursor: pointer;
+}
+
+.keyboard .keys .key.pressed {
+	background: #9f9f9f;
+}
+
+/* white keys */
+
+/* .keyboard .keys .key:nth-child(1),
+.keyboard .keys .key:nth-child(3),
+.keyboard .keys .key:nth-child(5),
+.keyboard .keys .key:nth-child(6),
+.keyboard .keys .key:nth-child(8),
+.keyboard .keys .key:nth-child(10),
+.keyboard .keys .key:nth-child(12) {
+	z-index: -1;
+} */
+
+/* black keys */
+.keyboard .keys .key:nth-child(2),
+.keyboard .keys .key:nth-child(4),
+.keyboard .keys .key:nth-child(7),
+.keyboard .keys .key:nth-child(9),
+.keyboard .keys .key:nth-child(11) {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	width: 12%;
+	height: 60%;
+	line-height: 550%;
+	vertical-align: bottom;
+	background: #2f2f2f;
+	color: white;
+}
+
+/* set position of black keys */
+.keyboard .keys .key:nth-child(2) {
+	left: 8.2%;
+}
+
+.keyboard .keys .key:nth-child(4) {
+	left: 22.4%;
+}
+
+.keyboard .keys .key:nth-child(7) {
+	left: 50.8%;
+}
+
+.keyboard .keys .key:nth-child(9) {
+	left: 65%;
+}
+
+.keyboard .keys .key:nth-child(11) {
+	left: 79.2%;
+}
+
+.keyboard .keys .key:nth-child(2).pressed,
+.keyboard .keys .key:nth-child(4).pressed,
+.keyboard .keys .key:nth-child(7).pressed,
+.keyboard .keys .key:nth-child(9).pressed,
+.keyboard .keys .key:nth-child(11).pressed {
+	background: black;
+}
+
+.keyboard .top .octave-switch {
+	position: absolute;
+	bottom: 2vw;
+	right: 6.2vw;
+	width: 18.6%;
+	top: 12.5vw;
+	text-align: center;
+}
+
+.keyboard .top .octlabel {
+	position: absolute;
+	top: 10vw;
+	left: 65vw;
+	height: 4vw;
+	width: 18vw;
+	height: 2.5vw;
+	font-size: 1.5vw;
+	color: #00ffcc;
+	text-align: right;
+	font-weight: 700;
+	font-family: 'Microsoft YaHei';
+}
+
+.keyboard .top .octave-switch>div {
+	width: 40%;
+	margin: 5%;
+	float: left;
+	color: white;
+	background: #3f3f3f;
+	font-size: 2vw;
+}
+
+.keyboard .top .octave-switch>div.pressed {
+	background: #2f2f2f;
+}
+
+.keyboard .top .octave-switch>div:hover {
+	cursor: pointer;
+}

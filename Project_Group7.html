@@ -1,0 +1,124 @@
+<!doctype html>
+<link href="./css/Project_Group7.css" rel="stylesheet" type="text/css" media="screen">
+<link href="./css/Controller.css" rel="stylesheet" type="text/css" media="screen">
+<div class="keyboard hidden">
+	<div class="top">
+		<div class="display">
+			<canvas class="waveform"></canvas>
+		</div>
+		<div class="type">
+			<div class="selector top"></div>
+			<div data-wavetype="sine" data-position="top" class="sine indv-type">Sine</div>
+			<div data-wavetype="square" data-position="middle" class="square indv-type">Square</div>
+			<div data-wavetype="sawtooth" data-position="bottom" class="saw indv-type">Saw</div>
+		</div>
+		<!-- <div class="name">GROUP7-WAVE</div> -->
+		<div id="midi_device_label" class="name">No MIDI Input Device</div>
+		<div class="volabel">Volume -/+</div>
+		<div class="volume">
+			<input type="range" value="100" class="slider" />
+		</div>
+		<div class="octlabel">Octave Modifier</div>
+		<div class="octave-switch">
+			<div data-octave="down" class="down octave-key"><</div>
+			<div data-octave="up" class="up octave-key">></div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="keys"></div>
+	</div>
+</div>
+<div id="eqBoard">
+	<div id="borderBoard" class="eqBoards">
+		<div id="upSection1" class="section">
+			<div class="freqBox fBox1">
+				<label class="label">LS</label>
+				<input id="knobLS" type="range" min="0" max="22050" step="0.01" value="35" class="myinput"></input>
+				<output id="knobLSOut" class="output">35 Hz</output>
+			</div>
+			<div class="freqBox fBox2">
+				<label class="label">HS</label>
+				<input id="knobHS" type="range" min="4700" max="22050" step="0.01" value="4700" class="myinput"></input>
+				<output id="knobHSOut" class="output">4700 Hz</output>
+			</div>
+			<div class="detBox dBox1">
+				<label class="label">det.</label>
+				<input id="detLS" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"></input>
+				<output id="detLSOut" class="output">0 dB</output>
+			</div>
+			<div class="detBox dBox2">
+				<label class="label">det.</label>
+				<input id="detHS" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"></input>
+				<output id="detHSOut" class="output">0 dB</output>
+			</div>
+		</div>
+		<div id="downSection1" class="section">
+			<div class="freqBox fBox1">
+				<label class="label">HP</label>
+				<input id="knobHP" type="range" min="100" max="22050" step="0.01" value="100" class="myinput"></input>
+				<output id="knobHPOut" class="output">100 Hz</output>
+			</div>
+			<div class="freqBox fBox2">
+				<label class="label">LP</label>
+				<input id="knobLP" type="range" min="100" max="22050" step="0.01" value="20000" class="myinput"></input>
+				<output id="knobLPOut" class="output">20000 Hz</output>
+			</div>
+			<div class="qBox qBox1">
+				<label class="label">Q.</label>
+				<input id="qHP" type="range" value="0" min="0" max="100" step="0.01" class="myinput"></input>
+				<output id="qHPOut" class="output">0</output>
+			</div>
+			<div class="qBox qBox2">
+				<label class="label">Q.</label>
+				<input id="qLP" type="range" value="0" min="0" max="100" step="0.01" class="myinput"></input>
+				<output id="qLPOut" class="output">0</output>
+			</div>
+		</div>
+	</div>
+	<div id="centerBoard" class="eqBoards">
+		<div id = "functionButtons" class = "buttonsBox">
+			<button id = "stopButton" class = "buttons">stop</button>
+			<button id = "recButton" class = "buttons">rec</button>
+		</div>
+		<dl id = "Audios" class = "audios">Track List</dl>
+	</div>
+	<div id="borderBoard" class="eqBoards">
+		<div id="upSection2" class="section">
+			<div class="filt filt1">
+				<label class="label">60Hz</label>
+				<input id="gainIn0" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 0);"--></input>
+				<output id="gainOut0" class="output">0 dB</output>
+			</div>
+			<div class="filt filt2">
+				<label class="label">170Hz</label>
+				<input id="gainIn1" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 1);"--></input>
+				<output id="gainOut1" class="output">0 dB</output>
+			</div>
+			<div class="filt filt3">
+				<label class="label">350Hz</label>
+				<input id="gainIn2" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 2);"--></input>
+				<output id="gainOut2" class="output">0 dB</output>
+			</div>
+			<div class="filt filt4">
+				<label class="label">1000Hz</label>
+				<input id="gainIn3" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 3);"--></input>
+				<output id="gainOut3" class="output">0 dB</output>
+			</div>
+			<div class="filt filt5">
+				<label class="label">3500Hz</label>
+				<input id="gainIn4" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 4);"--></input>
+				<output id="gainOut4" class="output">0 dB</output>
+			</div>
+			<div class="filt filt6">
+				<label class="label">10000Hz</label>
+				<input id="gainIn5" type="range" value="0" min="-100" max="100" step="0.01" class="myinput"> <!--oninput="changeGain(this.value, 5);"--></input>
+				<output id="gainOut5" class="output">0 dB</output>
+			</div>
+		</div>
+	</div>
+	</div>
+
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="script/MIDI_core.js"></script>
+<script src="script/MIDI_bridge.js"></script>
+<script src="script/Project_Group7_0128.js"></script>

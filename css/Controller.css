@@ -1,0 +1,364 @@
+/* CSS OF AXEL */
+
+#eqBoard{
+  /*border: 2px solid grey;*/
+  height: 25.5vw;
+  width: 90vw;
+  margin: 0px auto;
+  top: 0;
+  box-shadow: 5px 5px 0px #2f2f2f;
+  position: relative;
+}
+
+#borderBoard{
+	height: 25.5vw;
+	width: 27.5vw;
+	position: relative;
+}
+
+#centerBoard{
+	height: 25.5vw;
+	width: 35vw;
+	position: relative;
+}
+
+#upSection1{
+	height: 10.5vw;
+	width: 27.5vw;
+	position: relative;
+}
+
+#downSection1{
+	height: 15vw;
+	width: 27.5vw;
+	position: relative;
+}
+
+#upSection2{
+	height: 25.5vw;
+	width: 27.5vw;
+	position: relative;
+}
+
+
+.freqBox{
+	width: 13vw;
+	height: 5vw;
+	position: absolute;
+}
+
+.freqBox:hover {
+	color: green;
+	font-weight: bold;
+}
+
+.freqBox input {
+	top: 2vw;
+	width: 10vw;
+	left: 1vw;
+	position: absolute;
+	overflow: hidden;
+	-webkit-appearance: none;
+	background-color: #9fa8af;
+}
+
+
+.freqBox input[type="range"]::-webkit-slider-runnable-track {
+  height: 1.4vw;
+  -webkit-appearance: none;
+  color: #00ffcc;
+  border: 0.1vw solid #29334f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.freqBox input[type="range"]::-webkit-slider-thumb {
+   height: 1.4vw;
+   width: 1.4vw;
+   cursor: pointer;
+   -webkit-appearance: none;
+   box-shadow: -80vw 0 0 80vw #00ffcc;
+   background: black;
+}
+
+.fBox1{
+	top: 0.5vw;
+	left: 0;
+}
+
+.fBox2{
+	top: 0.5vw;
+	right: 0;
+}
+
+.label {
+	text-align: center;
+	top: 0.3vw;
+	left: 1.5vw;
+	font-family: "Open Sans";
+	font-size: 1.2vw;
+	font-weight: bold;
+	position: absolute;
+}
+
+
+
+.output{
+	right: 1.7vw;
+	top: 0.5vw;
+	font-family: "Open Sans";
+	font-size: 1.1vw;
+	font-weight: bold;
+	position: absolute;
+}
+
+.qBox{
+	width: 7vw;
+	height: 13vw;
+	position: absolute;
+}
+
+.qBox1{
+	bottom: 0;
+	left: 2vw;
+}
+
+.qBox2{
+	bottom: 0;
+	right: 4vw;
+}
+
+.qBox input {
+	bottom: 4.1vw;
+	width: 8vw;
+	left: 0vw;
+	position: absolute;
+	overflow: hidden;
+	-webkit-appearance: none;
+	background-color: #9fa8af;
+	transform: rotate(270deg);
+}
+
+
+
+.qBox input[type="range"]::-webkit-slider-runnable-track {
+  height: 1.1vw;
+  -webkit-appearance: none;
+  color: #00ffcc;
+  border: 0.1vw solid #29334f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.qBox input[type="range"]::-webkit-slider-thumb {
+   height: 1.1vw;
+   width: 1.1vw;
+   cursor: pointer;
+   -webkit-appearance: none;
+   box-shadow: -80vw 0 0 80vw #00ffcc; /*DA CAMBIARE COLORE*/
+   background: black;
+}
+
+.qBox label{
+	top: 7vw;
+	left: 2vw;
+	position: absolute;
+}
+
+.qBox output{
+	top: 3vw;
+	right: 2.4vw;
+}
+
+.qBox:hover {
+	color: yellow;
+	font-weight: bold;
+}
+
+.detBox{
+	width: 12vw;
+	height: 4vw;
+	position: absolute;
+}
+
+.dBox1{
+	bottom: 0.5vw;
+	left: 0;
+}
+
+.dBox2{
+	bottom: 0.5vw;
+	right: 2vw;
+}
+
+.detBox:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.detBox input {
+	top: 2vw;
+	width: 9vw;
+	left: 2vw;
+	position: absolute;
+	overflow: hidden;
+	-webkit-appearance: none;
+	background-color: #9fa8af;
+}
+
+.detBox input[type="range"]::-webkit-slider-runnable-track {
+  height: 1.1vw;
+  -webkit-appearance: none;
+  color: #00ffcc;
+  border: 0.1vw solid #29334f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.detBox input[type="range"]::-webkit-slider-thumb {
+   height: 1.1vw;
+   width: 1.1vw;
+   cursor: pointer;
+   -webkit-appearance: none;
+   box-shadow: -80vw 0 0 80vw #00ffcc; /*DA CAMBIARE COLORE*/
+   background: black;
+}
+
+.filt{
+	width: 20vw;
+	height: 4vw;
+	left: 1vw;
+	display: flex;
+	position: absolute;
+}
+.filt:hover {
+	color: green;
+	font-weight: bold;
+}
+
+.filt input {
+	top: 1.5vw;
+	width: 18vw;
+	left: 3vw;
+	position: absolute;
+	overflow: hidden;
+	-webkit-appearance: none;
+	background-color: #9fa8af;
+}
+
+.filt input[type="range"]::-webkit-slider-runnable-track {
+  height: 1.4vw;
+  -webkit-appearance: none;
+  color: #13bba4;
+  border: 1px solid #29334f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.filt input[type="range"]::-webkit-slider-thumb {
+   height: 1.4vw;
+   width: 1.4vw;
+   cursor: pointer;
+   -webkit-appearance: none;
+   box-shadow: -80vw 0 0 80vw #00ffcc;
+   background: black;
+}
+
+
+.filt1{
+	top: 3vw;
+}
+
+.filt2{
+	top: 6vw;
+}
+
+.filt3{
+	top: 9vw;
+}
+
+.filt4{
+	top: 12vw;
+}
+
+.filt5{
+	top: 15vw;
+}
+
+.filt6{
+	top: 18vw;
+}
+
+.eqBoards{
+	/*border: 0.1vw solid black;*/
+	background-color: grey;
+	display: inline-block;
+	margin: -2px;
+}
+
+.section{
+	/*border: 0.1vw solid black;*/
+	display: flex;
+}
+
+.buttonsBox {
+	height: 10vw;
+	width: 20vw;
+	position: absolute;
+	top: 2vw;
+	left: 8vw;
+}
+
+.buttons {
+	height: 5vw;
+	width: 5vw;
+	margin-top: 1vw;
+	margin-left: 2.3vw;
+	display: inline-flex;
+	cursor: pointer;
+	font-size: 1.2vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 4;
+	border-top: 0.1vw solid grey;
+	border-left: 0.1vw solid grey;
+	border-bottom: 0.1vw grey;
+	border-right: 0.1vw grey;
+	color: #00ffcc;
+	background: radial-gradient(at center,#18171c,#1c1c1c);
+	box-shadow: 0vw 0.5vw 1.5vw rgba(0,0,0,.5),inset 0.5vw 1.4vw 1.5vw rgba(255,255,255,.7), inset -0.5vw -1.4vw 1.5vw rgba(0,0,0,.2);
+	overflow: hidden;
+}
+
+.buttons:hover {
+	color: #a51b0b;
+	font-weight: bold;
+}
+
+.audios {
+	height : 12vw;
+	width : 25vw;
+	position : absolute;
+	bottom : 2vw;
+	left: 6vw;
+	overflow-y: scroll;
+	font-size: 1.6vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+.audios:hover {
+	color: #a51b0b;
+	font-weight: bold;
+}
+
+.audioClass {
+	height: 2vw;
+	width: 20vw;
+	/* height: 5vw;
+	width: 22vw; */
+	/* background-color: lightgrey; */
+}
+
+
+/* CSS OF AXEL */
