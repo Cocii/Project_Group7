@@ -66,3 +66,4 @@ We call many functions in the [Web Audio API](https://developer.mozilla.org/en-U
 ## Project Demo
 
 Here is our project please have a look and try - - > [Project of Group7](https://cocii.github.io/Project_Group7/)
+And here is a short demo of the project - - > [Demo](https://youtu.be/dbg_LCANT-c)
