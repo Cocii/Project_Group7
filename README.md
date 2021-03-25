@@ -2,7 +2,7 @@
 
 ## Virtual keyboards and effects
 
-![Whole Keyboard](screenshot/Whole Keyboard.png)
+![Whole Keyboard](screenshot\Whole Keyboard.png)
 
 ## Introduction
 
@@ -12,7 +12,7 @@ This is the project for the ACTAM course, we are Axel and Jiayan(Group7). Since 
 
 ### Keyboard Part
 
-![Keyboard Part](screenshot/Keyboard Part.jpg)
+![Keyboard Part](screenshot\Keyboard Part.jpg)
 
 1. **MIDI Name:** When you access your MIDI device, it will display the name of your MIDI device on the top area.
 2. **Wave Selector:** You can choose the type of wave to make sound. 
@@ -23,7 +23,7 @@ This is the project for the ACTAM course, we are Axel and Jiayan(Group7). Since 
 
 ### Effector Part
 
-![Effector part](screenshot/Effector part.jpg)
+![Effector part](screenshot\Effector part.jpg)
 
 1. **[input here]:** 
 2. **Stop and Record buttons:** 
