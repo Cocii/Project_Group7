@@ -21,7 +21,7 @@ This is the project for the ACTAM course, we are Axel and Jiayan(Group7). Since 
 5. **Octave Modifier:** The tones can be higher or lower by using mouse to click or press the greater/less than signs on your computer keyboard)
 6. **Keyboard:** It's 12-keys keyboard, you can play it with your computer keyboard, your mouse or your MIDI devices. If you are using a phone or pad you can just use your finger to touch it.
 
-### Effector Part
+### Filters Part
 
 ![Effectorpart](screenshot/Effector%20part.jpg)
 
