@@ -44,7 +44,7 @@ This is the project for the ACTAM course, we are Axel and Jiayan(Group7). Since 
 
 4. **Peaking:** The peaking filter allows all frequencies through, but adds a boost (or attenuation) to a range of frequencies.
 
-   * For more information on filters/equalizers: https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode;https://rebootrecording.com/high-and-low-shelf/ 
+   * For more information on filters/equalizers: https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode; https://rebootrecording.com/high-and-low-shelf/ 
 
 ## Technologies Used
 
