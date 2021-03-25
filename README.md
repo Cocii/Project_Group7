@@ -30,6 +30,8 @@ This is the project for the ACTAM course, we are Axel and Jiayan(Group7). Since 
 3. **Track list:** 
 4. **[input here]:** 
 
+## Implementation
+
 ## Technologies Used
 
 ### HTML, CSS & JS
